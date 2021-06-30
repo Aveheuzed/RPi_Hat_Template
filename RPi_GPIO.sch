@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:RPi_Hat
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,19 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RPi_Hat:RPi_GPIO J1
-U 1 1 5515D39E
-P 2750 2700
-AR Path="/5515D39E" Ref="J1"  Part="1" 
-AR Path="/5515D395/5515D39E" Ref="J1"  Part="1" 
-F 0 "J1" H 3500 2950 60  0000 C CNN
-F 1 "RPi_GPIO" H 3500 2850 60  0000 C CNN
-F 2 "RPi_Hat:Samtec_HLE-120-02-XXX-DV-BE-XX-XX" H 2750 2700 60  0001 C CNN
-F 3 "" H 2750 2700 60  0000 C CNN
-	1    2750 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L RPi_Hat:RPi_GPIO J2
 U 1 1 5516AE26
 P 7500 2700
@@ -40,8 +26,243 @@ F 3 "" H 7500 2700 60  0000 C CNN
 	1    7500 2700
 	1    0    0    -1  
 $EndComp
-Text Notes 2950 5000 0    60   Italic 0
-Surface Mount Connector
 Text Notes 7800 5000 0    60   Italic 0
 Thru-Hole Connector
+$Comp
+L Connector_Generic:Conn_01x06 J1
+U 1 1 60DCC9B1
+P 5100 3800
+F 0 "J1" H 5018 3275 50  0000 C CNN
+F 1 "Conn_01x06" H 5018 3366 50  0000 C CNN
+F 2 "" H 5100 3800 50  0001 C CNN
+F 3 "~" H 5100 3800 50  0001 C CNN
+	1    5100 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 60DCDC2C
+P 6850 5200
+F 0 "#PWR03" H 6850 4950 50  0001 C CNN
+F 1 "GND" H 6855 5027 50  0000 C CNN
+F 2 "" H 6850 5200 50  0001 C CNN
+F 3 "" H 6850 5200 50  0001 C CNN
+	1    6850 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60DCDDD2
+P 7150 4200
+F 0 "R3" V 7150 4050 50  0000 C CNN
+F 1 "5600" V 7150 4200 50  0000 C CNN
+F 2 "" V 7080 4200 50  0001 C CNN
+F 3 "~" H 7150 4200 50  0001 C CNN
+	1    7150 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60DCE0BE
+P 7150 4100
+F 0 "R2" V 7150 3950 50  0000 C CNN
+F 1 "2420" V 7150 4100 50  0000 C CNN
+F 2 "" V 7080 4100 50  0001 C CNN
+F 3 "~" H 7150 4100 50  0001 C CNN
+	1    7150 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60DCE240
+P 7150 4300
+F 0 "R4" V 7150 4150 50  0000 C CNN
+F 1 "920" V 7150 4300 50  0000 C CNN
+F 2 "" V 7080 4300 50  0001 C CNN
+F 3 "~" H 7150 4300 50  0001 C CNN
+	1    7150 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60DCE534
+P 7150 4500
+F 0 "R6" V 7150 4350 50  0000 C CNN
+F 1 "2420" V 7150 4500 50  0000 C CNN
+F 2 "" V 7080 4500 50  0001 C CNN
+F 3 "~" H 7150 4500 50  0001 C CNN
+	1    7150 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 60DCE878
+P 6750 3150
+F 0 "D1" V 6789 3033 50  0000 R CNN
+F 1 "LED" V 6698 3033 50  0000 R CNN
+F 2 "" H 6750 3150 50  0001 C CNN
+F 3 "~" H 6750 3150 50  0001 C CNN
+	1    6750 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60DCEF92
+P 6750 2850
+F 0 "R1" H 6820 2896 50  0000 L CNN
+F 1 "330" H 6800 2800 50  0000 L CNN
+F 2 "" V 6680 2850 50  0001 C CNN
+F 3 "~" H 6750 2850 50  0001 C CNN
+	1    6750 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 5200 6700 5200
+Wire Wire Line
+	6700 4600 7300 4600
+Connection ~ 6700 5200
+Wire Wire Line
+	6700 5200 6850 5200
+NoConn ~ 5300 4000
+Text GLabel 5700 3800 3    50   Input ~ 0
+UP
+Text GLabel 5400 3900 3    50   Input ~ 0
+DOWN
+Text GLabel 5500 3900 3    50   Input ~ 0
+LEFT
+Text GLabel 5800 3800 3    50   Input ~ 0
+RIGHT
+Text GLabel 5600 3900 3    50   Input ~ 0
+MID
+$Comp
+L power:GND #PWR01
+U 1 1 60DD2836
+P 5300 3700
+F 0 "#PWR01" H 5300 3450 50  0001 C CNN
+F 1 "GND" V 5305 3572 50  0000 R CNN
+F 2 "" H 5300 3700 50  0001 C CNN
+F 3 "" H 5300 3700 50  0001 C CNN
+	1    5300 3700
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5300 3600 2    50   Input ~ 0
+LED
+NoConn ~ 5300 3500
+Wire Wire Line
+	5300 3800 5800 3800
+Wire Wire Line
+	5300 3900 5600 3900
+$Comp
+L Device:R R5
+U 1 1 60DCE3DE
+P 7150 4400
+F 0 "R5" V 7150 4250 50  0000 C CNN
+F 1 "5600" V 7150 4400 50  0000 C CNN
+F 2 "" V 7080 4400 50  0001 C CNN
+F 3 "~" H 7150 4400 50  0001 C CNN
+	1    7150 4400
+	0    1    1    0   
+$EndComp
+Text GLabel 6600 4500 0    50   Input ~ 0
+DOWN
+Text GLabel 6600 4400 0    50   Input ~ 0
+LEFT
+Text GLabel 6600 4300 0    50   Input ~ 0
+MID
+Text GLabel 6600 4100 0    50   Input ~ 0
+UP
+Text GLabel 6600 4200 0    50   Input ~ 0
+RIGHT
+Wire Wire Line
+	6600 4100 7000 4100
+Wire Wire Line
+	6600 4200 7000 4200
+Wire Wire Line
+	6600 4300 7000 4300
+Wire Wire Line
+	6600 4400 7000 4400
+Wire Wire Line
+	6600 4500 7000 4500
+Text GLabel 7300 3800 0    50   Input ~ 0
+LED
+Wire Wire Line
+	7300 2700 7100 2700
+Wire Wire Line
+	7100 3300 7100 3100
+Wire Wire Line
+	7100 3100 7300 3100
+NoConn ~ 7300 2800
+NoConn ~ 7300 2900
+NoConn ~ 7300 3000
+NoConn ~ 7300 3200
+NoConn ~ 7300 3300
+NoConn ~ 7300 3400
+NoConn ~ 7300 3500
+NoConn ~ 7300 3600
+NoConn ~ 7300 3700
+NoConn ~ 7300 3900
+NoConn ~ 7300 4000
+NoConn ~ 9200 4600
+NoConn ~ 9200 4500
+NoConn ~ 9200 4400
+NoConn ~ 9200 4300
+NoConn ~ 9200 4200
+NoConn ~ 9200 4100
+NoConn ~ 9200 4000
+NoConn ~ 9200 3900
+NoConn ~ 9200 3800
+NoConn ~ 9200 3700
+NoConn ~ 9200 3600
+NoConn ~ 9200 3500
+NoConn ~ 9200 3400
+NoConn ~ 9200 3300
+NoConn ~ 9200 3200
+NoConn ~ 9200 3100
+NoConn ~ 9200 3000
+NoConn ~ 9200 2900
+NoConn ~ 9200 2800
+NoConn ~ 9200 2700
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 60E03C43
+P 6550 5200
+F 0 "#FLG01" H 6550 5275 50  0001 C CNN
+F 1 "PWR_FLAG" H 6550 5373 50  0000 C CNN
+F 2 "" H 6550 5200 50  0001 C CNN
+F 3 "~" H 6550 5200 50  0001 C CNN
+	1    6550 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 60E0428D
+P 7100 2700
+F 0 "#FLG02" H 7100 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 7100 2873 50  0000 C CNN
+F 2 "" H 7100 2700 50  0001 C CNN
+F 3 "~" H 7100 2700 50  0001 C CNN
+	1    7100 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 60E04D6B
+P 7100 3300
+F 0 "#PWR05" H 7100 3050 50  0001 C CNN
+F 1 "GND" H 7105 3127 50  0000 C CNN
+F 2 "" H 7100 3300 50  0001 C CNN
+F 3 "" H 7100 3300 50  0001 C CNN
+	1    7100 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7100 3300
+Wire Wire Line
+	6750 3300 7100 3300
+Wire Wire Line
+	6700 4600 6700 5200
+Connection ~ 7100 2700
+Wire Wire Line
+	6750 2700 7100 2700
+Text Notes 6750 2700 0    50   ~ 0
+10 mA
 $EndSCHEMATC
