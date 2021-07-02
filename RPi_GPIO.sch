@@ -31,12 +31,12 @@ Thru-Hole Connector
 $Comp
 L Connector_Generic:Conn_01x06 J1
 U 1 1 60DCC9B1
-P 5100 3800
-F 0 "J1" H 5018 3275 50  0000 C CNN
-F 1 "Conn_01x06" H 5018 3366 50  0000 C CNN
-F 2 "" H 5100 3800 50  0001 C CNN
-F 3 "~" H 5100 3800 50  0001 C CNN
-	1    5100 3800
+P 5800 3500
+F 0 "J1" H 5718 2975 50  0000 C CNN
+F 1 "Conn_01x06" H 5718 3066 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical" H 5800 3500 50  0001 C CNN
+F 3 "~" H 5800 3500 50  0001 C CNN
+	1    5800 3500
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -56,7 +56,7 @@ U 1 1 60DCDDD2
 P 7150 4200
 F 0 "R3" V 7150 4050 50  0000 C CNN
 F 1 "5600" V 7150 4200 50  0000 C CNN
-F 2 "" V 7080 4200 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 7080 4200 50  0001 C CNN
 F 3 "~" H 7150 4200 50  0001 C CNN
 	1    7150 4200
 	0    1    1    0   
@@ -67,7 +67,7 @@ U 1 1 60DCE0BE
 P 7150 4100
 F 0 "R2" V 7150 3950 50  0000 C CNN
 F 1 "2420" V 7150 4100 50  0000 C CNN
-F 2 "" V 7080 4100 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 7080 4100 50  0001 C CNN
 F 3 "~" H 7150 4100 50  0001 C CNN
 	1    7150 4100
 	0    1    1    0   
@@ -78,7 +78,7 @@ U 1 1 60DCE240
 P 7150 4300
 F 0 "R4" V 7150 4150 50  0000 C CNN
 F 1 "920" V 7150 4300 50  0000 C CNN
-F 2 "" V 7080 4300 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 7080 4300 50  0001 C CNN
 F 3 "~" H 7150 4300 50  0001 C CNN
 	1    7150 4300
 	0    1    1    0   
@@ -89,7 +89,7 @@ U 1 1 60DCE534
 P 7150 4500
 F 0 "R6" V 7150 4350 50  0000 C CNN
 F 1 "2420" V 7150 4500 50  0000 C CNN
-F 2 "" V 7080 4500 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 7080 4500 50  0001 C CNN
 F 3 "~" H 7150 4500 50  0001 C CNN
 	1    7150 4500
 	0    1    1    0   
@@ -100,7 +100,7 @@ U 1 1 60DCE878
 P 6750 3150
 F 0 "D1" V 6789 3033 50  0000 R CNN
 F 1 "LED" V 6698 3033 50  0000 R CNN
-F 2 "" H 6750 3150 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 6750 3150 50  0001 C CNN
 F 3 "~" H 6750 3150 50  0001 C CNN
 	1    6750 3150
 	0    -1   -1   0   
@@ -111,7 +111,7 @@ U 1 1 60DCEF92
 P 6750 2850
 F 0 "R1" H 6820 2896 50  0000 L CNN
 F 1 "330" H 6800 2800 50  0000 L CNN
-F 2 "" V 6680 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 6680 2850 50  0001 C CNN
 F 3 "~" H 6750 2850 50  0001 C CNN
 	1    6750 2850
 	1    0    0    -1  
@@ -123,66 +123,46 @@ Wire Wire Line
 Connection ~ 6700 5200
 Wire Wire Line
 	6700 5200 6850 5200
-NoConn ~ 5300 4000
-Text GLabel 5700 3800 3    50   Input ~ 0
+NoConn ~ 6000 3700
+Text GLabel 6400 3500 3    50   Input ~ 0
 UP
-Text GLabel 5400 3900 3    50   Input ~ 0
+Text GLabel 6100 3600 3    50   Input ~ 0
 DOWN
-Text GLabel 5500 3900 3    50   Input ~ 0
+Text GLabel 6200 3600 3    50   Input ~ 0
 LEFT
-Text GLabel 5800 3800 3    50   Input ~ 0
+Text GLabel 6500 3500 3    50   Input ~ 0
 RIGHT
-Text GLabel 5600 3900 3    50   Input ~ 0
+Text GLabel 6300 3600 3    50   Input ~ 0
 MID
 $Comp
 L power:GND #PWR01
 U 1 1 60DD2836
-P 5300 3700
-F 0 "#PWR01" H 5300 3450 50  0001 C CNN
-F 1 "GND" V 5305 3572 50  0000 R CNN
-F 2 "" H 5300 3700 50  0001 C CNN
-F 3 "" H 5300 3700 50  0001 C CNN
-	1    5300 3700
+P 6000 3400
+F 0 "#PWR01" H 6000 3150 50  0001 C CNN
+F 1 "GND" V 6005 3272 50  0000 R CNN
+F 2 "" H 6000 3400 50  0001 C CNN
+F 3 "" H 6000 3400 50  0001 C CNN
+	1    6000 3400
 	0    -1   -1   0   
 $EndComp
-Text GLabel 5300 3600 2    50   Input ~ 0
+Text GLabel 6000 3300 2    50   Input ~ 0
 LED
-NoConn ~ 5300 3500
+NoConn ~ 6000 3200
 Wire Wire Line
-	5300 3800 5800 3800
+	6000 3500 6500 3500
 Wire Wire Line
-	5300 3900 5600 3900
+	6000 3600 6300 3600
 $Comp
 L Device:R R5
 U 1 1 60DCE3DE
 P 7150 4400
 F 0 "R5" V 7150 4250 50  0000 C CNN
 F 1 "5600" V 7150 4400 50  0000 C CNN
-F 2 "" V 7080 4400 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 7080 4400 50  0001 C CNN
 F 3 "~" H 7150 4400 50  0001 C CNN
 	1    7150 4400
 	0    1    1    0   
 $EndComp
-Text GLabel 6600 4500 0    50   Input ~ 0
-DOWN
-Text GLabel 6600 4400 0    50   Input ~ 0
-LEFT
-Text GLabel 6600 4300 0    50   Input ~ 0
-MID
-Text GLabel 6600 4100 0    50   Input ~ 0
-UP
-Text GLabel 6600 4200 0    50   Input ~ 0
-RIGHT
-Wire Wire Line
-	6600 4100 7000 4100
-Wire Wire Line
-	6600 4200 7000 4200
-Wire Wire Line
-	6600 4300 7000 4300
-Wire Wire Line
-	6600 4400 7000 4400
-Wire Wire Line
-	6600 4500 7000 4500
 Text GLabel 7300 3800 0    50   Input ~ 0
 LED
 Wire Wire Line
@@ -265,4 +245,79 @@ Wire Wire Line
 	6750 2700 7100 2700
 Text Notes 6750 2700 0    50   ~ 0
 10 mA
+$Comp
+L Device:R R7
+U 1 1 60DF1BFD
+P 6450 4100
+F 0 "R7" V 6450 4250 50  0000 C CNN
+F 1 "0" V 6450 4100 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 6380 4100 50  0001 C CNN
+F 3 "~" H 6450 4100 50  0001 C CNN
+	1    6450 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 60DF29A1
+P 6450 4300
+F 0 "R9" V 6450 4450 50  0000 C CNN
+F 1 "0" V 6450 4300 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 6380 4300 50  0001 C CNN
+F 3 "~" H 6450 4300 50  0001 C CNN
+	1    6450 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 60DF2B86
+P 6450 4400
+F 0 "R10" V 6450 4550 50  0000 C CNN
+F 1 "0" V 6450 4400 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 6380 4400 50  0001 C CNN
+F 3 "~" H 6450 4400 50  0001 C CNN
+	1    6450 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 60DF2D23
+P 6450 4500
+F 0 "R11" V 6450 4650 50  0000 C CNN
+F 1 "0" V 6450 4500 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 6380 4500 50  0001 C CNN
+F 3 "~" H 6450 4500 50  0001 C CNN
+	1    6450 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 60DF2EEB
+P 6450 4200
+F 0 "R8" V 6450 4350 50  0000 C CNN
+F 1 "0" V 6450 4200 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" V 6380 4200 50  0001 C CNN
+F 3 "~" H 6450 4200 50  0001 C CNN
+	1    6450 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 4500 7000 4500
+Wire Wire Line
+	6600 4400 7000 4400
+Wire Wire Line
+	6600 4300 7000 4300
+Wire Wire Line
+	6600 4200 7000 4200
+Wire Wire Line
+	6600 4100 7000 4100
+Text GLabel 6300 4200 0    50   Input ~ 0
+RIGHT
+Text GLabel 6300 4100 0    50   Input ~ 0
+UP
+Text GLabel 6300 4300 0    50   Input ~ 0
+MID
+Text GLabel 6300 4400 0    50   Input ~ 0
+LEFT
+Text GLabel 6300 4500 0    50   Input ~ 0
+DOWN
 $EndSCHEMATC
